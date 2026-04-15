@@ -588,6 +588,7 @@ function hideError() {
 }
 
 
+function loadDemo() {
   allData = [
     {Floor:"1",Unit:"asd",    Status:"Available","Sale Value":11111},
     {Floor:"1",Unit:"zx12",   Status:"Sold",      "Sale Value":11323},
@@ -600,9 +601,9 @@ function hideError() {
     {Floor:"6",Unit:"ddd",    Status:"Available", "Sale Value":66666}
   ];
   lastFetchTime = new Date();
-  setSyncState('stale','Demo — update CONFIG.EXCEL_URL');
+  setSyncState('stale','Demo data — upload Matrix.xlsx to GitHub to see live data');
   buildFloorPills(); updateStats(); render();
-  showToast('ℹ Demo data — set your EXCEL_URL in CONFIG', 'info');
+  showToast('ℹ Demo data — upload Matrix.xlsx to GitHub repo', 'info');
 }
 
 /* ════════════════ Countdown ring ════════════════ */
